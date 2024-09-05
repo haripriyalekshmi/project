@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+       
+            
+
+
+html, body {
+    height: 100%; /* Full height for the body and html to ensure full viewport coverage */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family: Arial, sans-serif; /* Set a default font */
+}
+
+form {
+    background:#127749; /* Background color for the form */
+    padding: 20px; /* Padding inside the form */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for a lifted effect */
+    width: 100%; /* Full width within the container */
+    max-width: 400px; /* Maximum width of the form */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"] {
+    width: calc(100% - 20px); /* Adjust width to fit within form padding */
+    padding: 10px; /* Padding inside input fields */
+    margin: 10px 0; /* Margin between input fields */
+    border: 1px solid #ccc; /* Border around input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+}
+
+button {
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for the button */
+    color:black; /* Button text color */
+    font-size: 14px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #127749; /* Darker color on hover */
+}
+
+
+
+       
+
+       
+   
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <form action="http://127.0.0.1:5500/index.html" >
+    
+        <div class="loginpage">
+        <div class="username">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="enter your name" required>
+            
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="enter your email" required>
+                </div>
+             <div class="password">
+            <label for="password">Password</label>
+            <input type="password" id="password" pattern="[A-Za-z]{3,}" placeholder="enter your password" required>
+            </div>
+            <div class="phone">
+                <label for="phone">Phone no</label>
+                <input type="tel" id="phone"  placeholder="enter your phone no" required>
+            </div>
+            <div class="dob">
+
+                <label for="dob">Date Of Birth</label>
+                <input type="date" id="dob" placeholder="dd-mm-yy" required>
+            </div>
+                
+            
+           <button type="submit">SIGNUP</button>
+           </button>
+        
+        </div>
+          
+        </form>
+</body>
+</html>
